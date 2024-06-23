@@ -1,0 +1,29 @@
+task arrow function
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var odd = arr => {
+    arr.forEach(num => {
+        if (num % 2 !== 0) {
+            console.log(num);
+        }
+    });
+};
+odd(array);
+
+task C:
+
+var valu = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var N = valu.reduce((num1, num2) => num1+ num2);
+
+console.log(N);
+
+task E:
+var array = ["level", "radar", "hello", "noon", "racecar"];
+var isPalindrome = str => {
+    var cleanStr = str.toLowerCase().replace(/[\W_]/g, '');
+    return cleanStr === cleanStr.split('').reverse().join('');
+};
+var palindromes = array.filter(str => isPalindrome(str));
+
+console.log(palindromes); 
+

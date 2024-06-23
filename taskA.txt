@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var N= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var odd = N.filter(function(N) {
+var num =N % 2 !== 0;
+    return num ;
+    
+});
+console.log(odd);
+    </script>
+</body>
+</html>
+
+task IIFE:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function() {
+            var N = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        
+            for (var i = 0; i < N.length; i++) {
+                if (N[i] % 2 !== 0) {
+                    console.log(N[i]);
+                }
+            }
+        })();
+    </script>
+</body>
+</html>
+
+task IIFE:c
+
+(function() {
+    var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var sum = 0
+    for (var i = 0; i <= array.length; i++) {
+        sum += i
+        }
+   console.log(sum) 
+})();
+
+
+task Anonymous function:c
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var sum = 0;
+
+var N=(function(array) {
+    for (var i = 0; i <=array.length; i++) {
+            sum += i;
+    }
+})
+var res = N(array)
+console.log(sum);
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+task IIFE:D
+
+var primes = (function(arr) {
+    return arr.filter(function(num) {
+        return isPrime(num);
+    });
+
+    function isPrime(num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (var i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+})(array);
+
+
+task iife:D
+
+
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var primeNumbers = (function(arr) {
+    var primeArr = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        if (isPrime(arr[i])) {
+            primeArr.push(arr[i]);
+        }
+    }
+
+    return primeArr;
+
+    function isPrime(num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (var i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+})(array);
+
+console.log(primeNumbers); 
+
+task e.
+
+var array = ["madam", "radar","noon",];
+
+var palindromes = (function(arr) {
+    var result = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i]) {
+            result.push(arr[i]);
+        }
+    }
+
+    return result;
+})(array);
+console.log(palindromes);
